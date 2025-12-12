@@ -22,6 +22,6 @@ $mail->Port = 587;
 $mail->Username = 'redlight.greenlight.ai@gmail.com';
 $mail->Password = '------------------------';
 
-$mail->setFrom('redlight.greenlight.ais@gmail.com','RedLight-GreenLight.AI');
+$mail->setFrom('redlight.greenlight.ai@gmail.com','RedLight-GreenLight.AI');
 
 ?>
