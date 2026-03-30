@@ -129,7 +129,7 @@ export default function HomePage() {
             <div className="row">
               {[
                 { name: 'Garrett McKenzie', role: 'Data Scientist', img: 'team-1.png', GitHub: 'https://github.com/Garrett-Mckenzie', LinkedIn: 'https://www.linkedin.com/in/garrett-mckenzie-09b6242b3/' },
-                { name: 'Ethan Bostick', role: 'Data Scientist', img: 'team-2.png', GitHub: 'https://github.com/EthanBostick', LinkedIn: 'https://www.linkedin.com/in/ethan-bostick-466717378/' },
+                { name: 'Ethan Bostick', role: 'Data Scientist', img: 'team-2.png', GitHub: 'https://github.com/EthanBostick', LinkedIn: 'https://www.linkedin.com/in/ethan-bostick-466717378/', Website: 'https://ethanbostick.github.io' },
                 { name: 'Caleb Lineberry', role: 'Full-Stack Developer', img: 'team-3.png', GitHub: 'https://github.com/CalebLineberry', LinkedIn: 'https://www.linkedin.com/in/caleb-lineberry/'  },
                 { name: 'Landon Gaboury', role: 'Business Developer', img: 'team-4.png', LinkedIn: 'https://www.linkedin.com/in/landon-gaboury/'  },
               ].map(member => (
@@ -151,10 +151,16 @@ export default function HomePage() {
                           <i className="fa fa-github"></i>
                       </a>
                       )}
+                      {member.Website && (
+                      <a href={member.Website} style={{ borderRight: '1px solid #1d7e0d', paddingRight: '10px', marginRight: '10px', color: '#1d7e0d' }}>
+                          <i className="fa fa-globe"></i>
+                      </a>
+                      )}
 
                       <a href={member.LinkedIn} style={{ color: '#1d7e0d' }}>
                           <i className="fa fa-linkedin"></i>
                       </a>
+                      
                       </span>
 
                     </div>
